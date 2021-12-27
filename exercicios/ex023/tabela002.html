@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -27,6 +28,20 @@
         thead, tfoot {
             background-color: grey;
             color: white;
+        }
+
+        thead > tr >th {
+            position: sticky;
+            top: 0;
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: #FFF;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
@@ -96,6 +111,70 @@
                 <tr>
                     <td>Pernambuco</td>
                     <td class="num">789456</td>
+                </tr>
+                <tr>
+                    <td>Maceió</td>
+                    <td class="num">321654</td>
+                </tr>
+                <tr>
+                    <td>Espirito Santo</td>
+                    <td class="num">456987</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande Norte</td>
+                    <td class="num">789456</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande Sul</td>
+                    <td class="num">654123</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">741258</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">852369</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">369852</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">741258</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">147258</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">852369</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">369852</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">123698</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">963258</td>
+                </tr>
+                <tr>
+                    <td>Macapá</td>
+                    <td class="num">745896</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">321456</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">963258</td>
                 </tr>
          </tbody>
          <tfoot>
