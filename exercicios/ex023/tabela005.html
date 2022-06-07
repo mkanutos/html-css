@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border:  1px solid black;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: grey;
+        }
+
+        .amarelo {
+            background-color: yellow
+        }
+
+        .verde {
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="verde" span="2">
+            <col class="amarelo">
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Maria Ana</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Paulo</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Jogador</td>
+        </tr>
+
+        <tr>
+            <td>Ambrósio</td>
+            <td>M</td>
+            <td>55</td>
+            <td>Pedreiro</td>
+        </tr>
+
+        <tr>
+            <td>Maria Paula</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Economista</td>
+        </tr>
+
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Professor</td>
+        </tr>
+
+        <tr>
+            <td>Mayra</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Cantora</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
