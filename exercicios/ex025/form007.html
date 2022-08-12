@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Concelho</label>
+            <select name="estado" id="iest">
+                <optgroup label="Barlavento">
+                    <option value="" selected>--- Escolha a ilha ---</option>
+                    <option value="SA">St. Antão</option>
+                    <option value="SV">S. Vicente</option>
+                    <option value="SN">S. Nicolau</option>
+                    <option value="SL">Sal</option>
+                    <option value="BV">Boa Vista</option>
+                </optgroup>
+                <optgroup label="Sotavento">
+                    <option value="MA">Maio</option>
+                    <option value="ST">Santiago</option>
+                    <option value="FG">Fogo</option>
+                    <option value="BR">Brava</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Developer</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>
